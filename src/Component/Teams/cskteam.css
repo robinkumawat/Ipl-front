@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    /* height: 200px; */
+}
+
+.card {
+    border-radius: 20px;
+    
+
+}
+
+.allteam .card a{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #031537;
+    border-radius: 20px;
+}
+
+.wapper {
+    background-image: url(../Image/Bg-image.svg);
+    background-color:#031945;
+    width: 100%;
+    padding: 20px;
+}
+
+.team-rec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    color: #fff;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.team-dea P {
+    background-color: #112a5c;
+    /* height: 36px; */
+    padding: 10px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    /* font-family: bebas_neueregular; */
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.team-name p {
+    background-color: #112a5c;
+    /* height: 36px; */
+    padding: 10px;
+    text-align: justify;
+    border-radius: 10px;
+    font-family: bebas_neueregular;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+section .csk-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+section
+{
+    background-image: url(../Image/Bg-image.svg);
+}
+section .cskteam  h4
+{
+margin: 20px;
+font-weight: 800;
+    font-size: 35px;
+}
+section .card-body {
+    text-align: center;
+}
+.csk-team .card img {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    height: 200px;
+}

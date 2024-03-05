@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ................First navebar........... */ 
+
+nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
+    background-color:#061e59 !important;
+}
+
+.bg-body-tertiary .ms-auto button
+{
+    gap: 10px;
+    padding:5px;
+border-radius: 10px;
+}
+
+a.navbar-brand {
+    color: white !important;
+}
+/* .bg-body-tertiary
+{
+    height: 45px;
+} */
+/* ................sec navbar........ */
+
+
+.body-tertiary a.navbar-brand {
+    color: rgb(255, 255, 255) !important;
+}
+
+nav.body-tertiary.navbar.navbar-expand-lg.navbar-light {
+    background-color: #19398a !important;
+}
+
+a.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.m-auto.navbar-nav {
+    gap: 11px;
+}
+.body-tertiary .ipl{
+    width: 95px;
+}
+a.search.nav-link {
+    /* height: 20px; */
+    padding: 6px;
+    border: 1px solid gray;
+    background-color: #6676ee;
+}
+.navbar.body-tertiary {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 1px 9px 19px 3px #1d1c1c;
+}

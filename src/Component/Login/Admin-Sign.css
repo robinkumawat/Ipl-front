@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.admin h2
+{
+    text-align: center;
+}
+.admin button.btn.btn-primary {
+    /* text-align: center !important; */
+    /* align-items: center; */
+    margin: 20px auto;
+    display: block;
+}

@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.news-detail h2 {
+    padding: 20px;
+}
+
+.news-detail {
+    padding: 30px;
+}

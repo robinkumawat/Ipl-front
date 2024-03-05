@@ -1,0 +1,31 @@
+.search-bar {
+    padding: 35px;
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: gray;
+    margin-top: 20px;
+}
+.search-bar .link {
+    padding: 5px;
+    border-radius: 5px;
+    /* color: black; */
+    background-color: #000000b8;
+}
+.search-bar .link:hover
+{
+    background-color: white;
+}
+
+.search-bar .link a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+}
+.search-bar .link a:hover
+{
+    color: #000;
+}

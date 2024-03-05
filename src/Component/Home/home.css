@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.carousel-caption h2 {
+    color: white;
+    position: absolute;
+    top: -370px;
+    left: -130px;
+    width: 550px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.home .carousel.slide {
+    /* background-image: linear-gradient(gray , rgb(59, 55, 55)) !important; */
+    height: 100%;
+    /* opacity: 0.5; */
+    width: 100%;
+    object-fit: cover;
+    /* height: 481px; */
+    width: 100%;
+}
+.slider-sec
+{
+    background-image: url(../Image/Bg-image.svg );
+    height: auto ;
+    width: 100%;
+    background-color: #10172b;
+    color: white;
+    /* box-shadow: 9px 0px 20px 0px black; */
+    margin-top: 20px;
+    border-radius: 25px;
+    /* position: relative; */
+    padding: 20px;
+}
+.latest-sec
+{
+    background-image: url(../Image/Bg-image.svg );
+    height: auto ;
+    width: 100%;
+    /* background-color: #10172b; */
+    color: rgb(0, 0, 0);
+    /* box-shadow: 9px 0px 20px 0px black; */
+    margin-top: 20px;
+    border-radius: 25px;
+    /* position: relative; */
+    padding: 20px;
+}
+.latest-sec .latest{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.slider-sec .latest{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* .home .carousel-item {
+    height: 479px;
+}  */
+/* .slider-sec .card-moments
+{
+    display: flex;
+    flex-wrap: wrap;
+} */
+.card-moment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* ..............point................ */
+
+.point-table
+{
+    height: auto;
+    width: 100%;
+    background-image: url(../Image/Bg-image.svg);
+    background-color: #4e5360;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+.point-table .csk .card {
+   margin: 10px;
+}
+.point-table .csk{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.point-table .latest {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
