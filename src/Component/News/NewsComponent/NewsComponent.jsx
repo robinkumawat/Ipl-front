@@ -56,7 +56,7 @@ function NewsComponent({ maxCardsToShow }) {
                             <img src={value.urlToImage} className='card-image' alt={value.title || "Image not available"} />
                             <div className="card-body">
                                 <h5 className='card-title'>{value.title}</h5>
-                                <p className='card-text'>{value.description}</p>
+                                {/* <p className='card-text'>{value.description}</p> */}
                                 <a href={value.url} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Read More</a>
                             </div>
                         </div>

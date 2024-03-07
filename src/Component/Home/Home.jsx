@@ -255,7 +255,7 @@ function Home() {
             </div>
 
             {/* .............latest video .......... */}
-           (
+           
             <div className="slider-sec">
                 <div className="latest">
                     <h3>Crickets  News</h3>
@@ -269,7 +269,7 @@ function Home() {
                     </div>
                 </Container>
             </div>
-            )
+            
 
         </>
     );

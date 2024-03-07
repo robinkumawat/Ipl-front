@@ -33,7 +33,7 @@ function AdminSignup() {
       email: AdminEmail,
       password: AdminPassword
     }
-    let result = await axios.post("http://localhost:4000/admin/register ",admindetails )
+    let result = await axios.post("",admindetails )
     result = result.data
     if (result.name) {
       alert("New Admin Registered")
