@@ -29,7 +29,7 @@ function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="/AdminLogin">admin</Nav.Link>
-              <Nav.Link href="/Login">Login</Nav.Link>
+              {/* <Nav.Link href="/Login">Login</Nav.Link> */}
               {/* <Button to="/AdminLogin">Admin Login</Button>
             <Button to="/Login">Sign up</Button> */}
             </Nav>

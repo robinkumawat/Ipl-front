@@ -7,7 +7,7 @@ import Home from './Component/Home/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AdminSignup from './Component/Login/AdminSignup'
 import AdminLogin from './Component/Login/AdminLogin'
-import Login from './Component/Login/Login'
+// import Login from './Component/Login/Login'
 import Signup from './Component/Login/Signup'
 import Teams from './Component/Teams/Teams'
 import Cskteam from './Component/Teams/Cskteam'
@@ -22,6 +22,7 @@ import Rcbteam from './Component/Teams/Rcbteam'
 import Shteam from './Component/Teams/Shteam'
 import Search from './Component/Home/Search/Search'
 import News from './Component/News/News'
+import Videos from './Component/Home/Videos/Video'
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
           <Route path='/AdminSignup' element={<AdminSignup />} />
           <Route path='/AdminLogin' element={<AdminLogin />} />
           <Route path='/Signup' element={<Signup  />} />
-          <Route path='/Login' element={<Login />} />
+          {/* <Route path='/Login' element={<Login />} /> */}
           <Route path='/Teams' element={<Teams />} />
           <Route path='/Csk' element={<Cskteam />} />
           <Route path='/Mi' element={<Miteam />} />
@@ -50,6 +51,9 @@ function App() {
           <Route path='/sh' element={<Shteam/>} />
           <Route path='/search' element={<Search/>} />
           <Route path='/News' element={<News/>} />
+          <Route path='/video' element={<Videos/>} />
+
+
 
 
         </Routes>
