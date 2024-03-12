@@ -1,0 +1,6 @@
+.wapper-video ul.videos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+}
