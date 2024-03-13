@@ -11,6 +11,7 @@ import React, { useEffect, useState } from 'react';
 import './home.css'
 // import NewsComp from '../News/News';
 import NewsComponent from '../News/NewsComponent/NewsComponent';
+import Video from './Videos/Video';
  
 
 function Home() {
@@ -106,7 +107,7 @@ function Home() {
             <div className="slider-sec">
                 <div className="latest">
                     <h3>Magic moments</h3>
-                    <Button>Show more</Button>
+                    <Button href='/Video'>Show more</Button>
                 </div>
                 <Container>
                     <div className="card-moment">

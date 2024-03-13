@@ -51,7 +51,7 @@ function App() {
           <Route path='/sh' element={<Shteam/>} />
           <Route path='/search' element={<Search/>} />
           <Route path='/News' element={<News/>} />
-          <Route path='/video' element={<Videos/>} />
+          {/* <Route path='/video' element={<Videos/>} /> */}
 
 
 
