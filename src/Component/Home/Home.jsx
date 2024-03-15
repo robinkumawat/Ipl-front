@@ -11,7 +11,7 @@ import React, { useEffect, useState } from 'react';
 import './home.css'
 // import NewsComp from '../News/News';
 import NewsComponent from '../News/NewsComponent/NewsComponent';
-import Video from './Videos/Video';
+// import Video from './Videos/Video';
  
 
 function Home() {

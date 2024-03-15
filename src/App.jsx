@@ -22,7 +22,7 @@ import Rcbteam from './Component/Teams/Rcbteam'
 import Shteam from './Component/Teams/Shteam'
 import Search from './Component/Home/Search/Search'
 import News from './Component/News/News'
-import Videos from './Component/Home/Videos/Video'
+// import Videos from './Component/Home/Videos/Video'
 
 
 function App() {
