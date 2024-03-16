@@ -12,6 +12,8 @@ import './home.css'
 // import NewsComp from '../News/News';
 import NewsComponent from '../News/NewsComponent/NewsComponent';
 // import Video from './Videos/Video';
+// import Score from '../Home/Scores/Score'
+import Video from '../Home/Scores/Score';
  
 
 function Home() {
@@ -104,7 +106,7 @@ function Home() {
 
             {/* ..........Magic Moments............... */}
 
-            <div className="slider-sec">
+            {/* <div className="slider-sec">
                 <div className="latest">
                     <h3>Magic moments</h3>
                     <Button href='/Video'>Show more</Button>
@@ -146,58 +148,23 @@ function Home() {
                         </Card>
                     </div>
                 </Container>
-            </div>
+            </div> */}
 
             {/* ............Latest videos............. */}
 
 
             <div className="latest-sec">
-                <div className="latest">
-                    <h3>Latest Video</h3>
-                    <Button>Show more</Button>
-                </div>
+                
                 <Container>
-                    <div className="card-moment">
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={First} />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={Second} />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={First} />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
+            
+                    <Video/>
+            
                 </Container>
             </div>
 
             {/* .....................Point Table............... */}
             
-            <div className="point-table">
+            {/* <div className="point-table">
             <div className="latest">
                    <h3>Point Table</h3>
                     <Button>Show more</Button>
@@ -253,7 +220,7 @@ function Home() {
                     </div>
                 </div>
                 </Container>
-            </div>
+            </div> */}
 
             {/* .............latest video .......... */}
            

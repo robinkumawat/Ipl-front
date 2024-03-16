@@ -1,11 +1,12 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './score.css'
 
 const Video = () => {
   const [matches, setMatches] = useState([]);
   const [filteredMatches, setFilteredMatches] = useState([]);
-  const [filter, setFilter] = useState([]); 
+  const [filter, setFilter] = useState('live'); 
 
 
   useEffect(() => {
@@ -18,6 +19,8 @@ const Video = () => {
           'X-RapidAPI-Host': 'free-cricket-live-score1.p.rapidapi.com'
         }
       };
+
+     
 
       try {
         const response = await axios.request(options);
@@ -44,26 +47,32 @@ const Video = () => {
     }
   }, [filter, matches]);
 
+  filteredMatches
+
   return (
-    <div>
+    <div className='score'>
       <h1>Score Board</h1>
-      <div>
-      
-       
+      <div className='scorebutton'>
         <button onClick={() => setFilter('live')}>Live</button>
         <button onClick={() => setFilter('upcoming')}>Upcoming</button>
         <button onClick={() => setFilter('finished')}>Finished</button>
       </div>
-      <div>
+      <div className='scoreboard'>
         {filteredMatches.map((match, index) => (
-          <div key={index}>
+          <div className='scorecard' key={index}>
+            <p>Series : {match?.srs}</p>
             <p>{match?.teams?.t1?.name} vs {match?.teams?.t2?.name}</p>
-            <p>{match?.teams?.t1?.sName} {match?.teams?.t1?.score} vs {match?.teams?.t2?.sName} {match?.teams?.t2?.score}</p>
-            <p>Status: {match?.matchStatus}</p>
+            <p>Format : {match?.format}</p>
+            <p className='scorestatus'>Status: {match?.matchStatus}</p>
+            <p>Matches : {match?.matchSuffix}</p>
+            {match.matchStatus.toLowerCase() !== 'upcoming' &&
+           ( <p>Score: {match?.teams?.t1?.sName} {match?.teams?.t1?.score} vs {match?.teams?.t2?.sName} {match?.teams?.t2?.score}</p>)}
             {match.matchStatus.toLowerCase() !== 'live' && <p>Time: {new Date(match.time * 1000).toLocaleString()}</p>}
-
+           {match.matchStatus.toLowerCase() !== 'finished' && <p>Stadium: {match?.venue}</p>}
+           {match.matchStatus.toLowerCase() === 'finished' && <p>Result : {match?.result?.message}</p> }
           </div>
         ))}
+         {filter === 'live' && filteredMatches.length === 0 && <p className='scorenote'>Note : No more live matches</p>}
       </div>
     </div>
   );

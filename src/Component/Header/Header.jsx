@@ -53,7 +53,7 @@ function Header() {
               <Nav.Link href="/Teams">TEAMS</Nav.Link>
               {/* <Nav.Link href="#point">POINT TABLE</Nav.Link> */}
               <Nav.Link href="/News">NEWS</Nav.Link>
-              <NavDropdown title="WINER" id="basic-nav-dropdown">
+              <NavDropdown title="Matches Prediction" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Win team</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   11winer

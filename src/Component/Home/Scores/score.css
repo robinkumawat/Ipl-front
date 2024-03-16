@@ -1,0 +1,52 @@
+*{    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.score .scorecard
+{
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 20px;
+    /* width: 300px; */
+    /* background-color: burlywood; */
+}
+.score .scorecard p {
+    margin-bottom: 0px;
+    font-size: auto;
+    font-weight: unset;
+    /* border: 1px solid ghostwhite; */
+
+}
+.score .scoreboard
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.score .scorebutton {
+    margin: 20px;
+
+}
+.score .scorebutton button{
+border-radius: 10px;
+gap: 10px;
+padding: 5px;
+margin: 5px;
+}
+.score p.scorenote {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: darkred;
+    color: white;
+    font-size: larger;
+}
+.score .scorebutton button:hover{
+    background-color: rgb(0, 8, 255);
+    color: white;
+}
+.score .scorestatus
+{
+    background-color: rgb(111, 142, 210);
+}

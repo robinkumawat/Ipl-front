@@ -16,7 +16,7 @@ import Axar from '../Dcimage/Axar.png'
 import Lalit from '../Dcimage/Lalit.png'
 import Mitchell from '../Dcimage/Mitchell.png'
 import Pravin from '../Dcimage/Pravin.png'
-// import vicky from '../Dcimage/vicky.png'
+// import Vicky from '../Dcimage/vicky.png'
 import Anrich from '../Dcimage/Anrich.png'
 import Kuldeep from '../Dcimage/Kuldeep.png'
 import Lungi from '../Dcimage/Lungi.png'
@@ -316,7 +316,7 @@ const Dcteam = () => {
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '15rem' }}>
-                                <Card.Img variant="top" src={vicky} />
+                                <Card.Img variant="top" src={Dark} />
                                 <Card.Body>
                                     <Card.Title>VICKY OSTWAL</Card.Title>
                                     <Card.Text>
