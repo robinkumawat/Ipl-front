@@ -97,7 +97,7 @@ const Dcteam = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: 5,
         slidesToScroll: 2,
 
     }
@@ -158,7 +158,7 @@ const Dcteam = () => {
                                     <Card.Title>David warner</Card.Title>
                                     <Card.Text>
                                         Batter ,
-                                        <span>CAPTAIN</span>
+                                        <span>(CAPTAIN)</span>
                                     </Card.Text>
 
                                 </Card.Body>

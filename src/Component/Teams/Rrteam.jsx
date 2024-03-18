@@ -96,7 +96,7 @@ const Rrteam = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: 5,
         slidesToScroll: 2,
 
     }

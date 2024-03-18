@@ -47,9 +47,9 @@ function Footer() {
                             <div className="social-media">
                                 <h2>Contact Us</h2>
                                 <ul>
-                                    <a href=""><li>Telegram</li></a>
+                                    <a href="https://telegram.me/FreeTipBets"><li>Telegram</li></a>
                                     <a href=""><li>Instagram</li></a>
-                                    <a href=""><li>Youtube</li></a>
+                                    <a href="https://youtube.com/@Suno_boss?si=sDq66EZP-CRds4OR"><li>Youtube</li></a>
                                     <a href=""><li>Whatsapp</li></a>
 
                                 </ul>

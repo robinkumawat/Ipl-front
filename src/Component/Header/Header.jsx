@@ -6,6 +6,7 @@ import "./header.css"
 import Bcci from '../Image/BCCI_logo.png'
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Ipl from '../Image/ipl_logo.png'
+import Logoipl from '../Image/main-logo.jpeg'
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import { Form } from 'react-router-dom';
@@ -16,7 +17,7 @@ import Search from '../Home/Search/Search';
 
 function Header() {
 
-  
+
 
   return (
     <>
@@ -24,7 +25,7 @@ function Header() {
         <Container>
           <Navbar.Brand href="#home">
             <img src={Bcci} alt="" />
-            BCCI</Navbar.Brand>
+            The CricLife</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -44,7 +45,7 @@ function Header() {
 
       <Navbar expand="lg" className="body-tertiary">
         <Container>
-          <Navbar.Brand href="#home"><img className='ipl' src={Ipl} alt="" />
+          <Navbar.Brand href="/"><img className='ipl' src={Logoipl} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -53,10 +54,10 @@ function Header() {
               <Nav.Link href="/Teams">TEAMS</Nav.Link>
               {/* <Nav.Link href="#point">POINT TABLE</Nav.Link> */}
               <Nav.Link href="/News">NEWS</Nav.Link>
-              <NavDropdown title="Matches Prediction" id="basic-nav-dropdown">
+              <NavDropdown title="MATCHES PREDICTION" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Win team</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  11winer
+                  Playing 11
                 </NavDropdown.Item>
                 {/* <NavDropdown.Item href="#action/3.3"></NavDropdown.Item> */}
                 <NavDropdown.Divider />
@@ -64,8 +65,8 @@ function Header() {
               </NavDropdown>
             </Nav>
             {/* <Nav.Link className=''></Nav.Link> */}
-      <Nav.Link className='search' href='/search'> Search</Nav.Link>
-      
+            <Nav.Link className='search' href='/search'> Search</Nav.Link>
+
           </Navbar.Collapse>
         </Container>
       </Navbar>

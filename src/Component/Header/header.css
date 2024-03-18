@@ -44,7 +44,8 @@ a.nav-link {
     gap: 11px;
 }
 .body-tertiary .ipl{
-    width: 95px;
+    width: 85px;
+    border-radius: 50%;
 }
 a.search.nav-link {
     /* height: 20px; */

@@ -100,7 +100,7 @@ const Cskteam = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow:5,
         slidesToScroll: 2,
 
     }
@@ -150,8 +150,8 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>M S DHONI</Card.Title>
                                     <Card.Text>
-                                        Wk keeper-Batter
-                                        <span>CAPTAIN</span>
+                                        Wk keeper-Batter 
+                                        <span>(CAPTAIN)</span>
                                     </Card.Text>
 
                                 </Card.Body>

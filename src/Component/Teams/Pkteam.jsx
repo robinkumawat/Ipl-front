@@ -14,17 +14,18 @@ import Jitesh from '../Pkimage/Jitesh.png'
 import Jonny from '../Pkimage/Jonny.png'
 import Prabhsimran from '../Pkimage/Prabhsimran.png'
 import Harpreet from '../Pkimage/Harpreet.png'
-import Liam from '../Pkimage/Harpreet.png'
+import Liam from '../Pkimage/Liam.png'
 import Atharva from '../Pkimage/Atharva.png'
 import Rishi from '../Pkimage/Rishi.png'
 import Sam from '../Pkimage/Sam.png'
 import Sikandar from '../Pkimage/Sikandar.png'
 import Shivam from '../Pkimage/Shivam.png'
-// import Vidwath  from '../Pkimage/Vidwath.png'
-// import Rahul from '../Pkimage/Rahul.png'
-// import Nathan from '../Pkimage/Nathan.png'
-// import Kagiso from '../Pkimage/Kagiso.png'
-// import 
+import Vidwath  from '../Pkimage/vidwath.png'
+import Rahul from '../Pkimage/Rahul.png'
+import Nathan from '../Pkimage/Nathan.png'
+import Kagiso from '../Pkimage/Kagiso.png'
+import Arshdeep from '../Pkimage/Arshdeep.png' 
+import Brar from '../Pkimage/Brar.png'
 
 
 
@@ -98,7 +99,7 @@ const Pkteam = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: 5,
         slidesToScroll: 2,
 
     }
@@ -337,9 +338,9 @@ const Pkteam = () => {
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '15rem' }}>
-                                <Card.Img variant="top" src={Dark} />
+                                <Card.Img variant="top" src={Brar} />
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title>HARPREET BRAR</Card.Title>
                                     <Card.Text>
                                         Bowler
                                     </Card.Text>
@@ -347,9 +348,9 @@ const Pkteam = () => {
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '15rem' }}>
-                                <Card.Img variant="top" src={First} />
+                                <Card.Img variant="top" src={Arshdeep} />
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title>ARSHDEEP SINGH</Card.Title>
                                     <Card.Text>
                                        Bowler
                                     </Card.Text>
@@ -357,9 +358,9 @@ const Pkteam = () => {
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '15rem' }}>
-                                <Card.Img variant="top" src={First} />
+                                <Card.Img variant="top" src={Kagiso} />
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title>KAGISO RABADA</Card.Title>
                                     <Card.Text>
                                        Bowler
                                     </Card.Text>
@@ -367,9 +368,9 @@ const Pkteam = () => {
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '15rem' }}>
-                                <Card.Img variant="top" src={First} />
+                                <Card.Img variant="top" src={Nathan} />
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title>NATHAN ELLIS</Card.Title>
                                     <Card.Text>
                                        Bowler
                                     </Card.Text>
@@ -377,9 +378,9 @@ const Pkteam = () => {
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '15rem' }}>
-                                <Card.Img variant="top" src={First} />
+                                <Card.Img variant="top" src={Rahul} />
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title>RAHUL CHAHAR</Card.Title>
                                     <Card.Text>
                                        Bowler
                                     </Card.Text>
@@ -387,9 +388,9 @@ const Pkteam = () => {
                                 </Card.Body>
                             </Card>
                             <Card style={{ width: '15rem' }}>
-                                <Card.Img variant="top" src={Dark} />
+                                <Card.Img variant="top" src={Vidwath} />
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title>VIDWATH KAVERAPPA</Card.Title>
                                     <Card.Text>
                                         Bowler
                                     </Card.Text>
@@ -399,7 +400,7 @@ const Pkteam = () => {
                             <Card style={{ width: '15rem' }}>
                                 <Card.Img variant="top" src={Dark} />
                                 <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Title>HARSHAL PATEL</Card.Title>
                                     <Card.Text>
                                         Bowler
                                     </Card.Text>

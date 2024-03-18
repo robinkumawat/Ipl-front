@@ -100,7 +100,7 @@ const Gteam = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: 5,
         slidesToScroll: 2,
 
     }
@@ -161,7 +161,7 @@ const Gteam = () => {
                                     <Card.Title>SHUBMAN GILL</Card.Title>
                                     <Card.Text>
                                         Batter ,
-                                        <span>CAPTAIN</span>
+                                        <span>(CAPTAIN)</span>
                                     </Card.Text>
 
                                 </Card.Body>
