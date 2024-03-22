@@ -22,7 +22,7 @@ function AdminSignup() {
     if (adminAuth) {
       Navigate("/")
     }
-  })
+  },[])
 
 
   const AdminSubmit = async () => {
@@ -33,7 +33,7 @@ function AdminSignup() {
       email: AdminEmail,
       password: AdminPassword
     }
-    let result = await axios.post("",admindetails )
+    let result = await axios.post("http://localhost:8000/user",admindetails )
     result = result.data
     if (result.name) {
       alert("New Admin Registered")

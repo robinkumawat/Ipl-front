@@ -4,20 +4,31 @@
     box-sizing: border-box;
 }
 
-.card img {
+.carda img {
     width: 100%;
     text-align: center;
     display: flex;
-    /* height: 200px; */
+    height: 200px;
 }
 
-.card {
+@media (min-width: 250px) and (max-width: 800px){
+.carda img {
+    height: auto;
+}
+}
+
+/* @media (min-width: 400px) and (max-width: 500px){
+    .card img {
+        height: 40%;
+    }
+    } */
+
+.carda {
     border-radius: 20px;
-    
-
+    /* width: auto !important; */
 }
 
-.allteam .card a{
+.allteam .carda button{
     text-align: center;
     align-items: center;
     display: flex;
@@ -85,7 +96,7 @@ font-weight: 800;
 section .card-body {
     text-align: center;
 }
-.csk-team .card img {
+.csk-team .carda img {
     width: 100%;
     text-align: center;
     display: flex;

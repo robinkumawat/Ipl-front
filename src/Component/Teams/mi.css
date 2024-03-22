@@ -8,8 +8,14 @@
     width: 100%;
     text-align: center;
     display: flex; 
-    /* height: 200px; */
+    height: 200px;
 }
+
+@media (min-width: 250px) and (max-width: 800px){
+    .card img {
+        height: auto;
+    }
+    }
 
 
 .card {
@@ -18,7 +24,7 @@
 
 }
 
-.allteam .card a {
+.allteam .card button {
     text-align: center;
     align-items: center;
     display: flex;

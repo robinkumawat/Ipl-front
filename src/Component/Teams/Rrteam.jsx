@@ -101,6 +101,10 @@ const Rrteam = () => {
 
     }
 
+    const handleReadMore = (url) => {
+        window.open(url, "_self"); 
+    };
+
     return (
         <>
             <div className="wapper">
@@ -108,10 +112,10 @@ const Rrteam = () => {
                     <div className="allteam">
                     <Slider {...sliderSettings}>
                         {cards.map((card, index) => (
-                            <div key={index} className="card">
-                                <a href={card.href} target="_blank" rel="noopener noreferrer">
-                                    <img src={card.image} alt={`Card ${index}`} />
-                                </a>
+                            <div key={index} className="carda">
+                                <button onClick={() => handleReadMore(card.href)}>
+                                        <img src={card.image} alt={`Card ${index}`} />
+                                    </button>
                             </div>
                         ))}
                     </Slider>

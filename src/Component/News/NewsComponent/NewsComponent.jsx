@@ -19,11 +19,10 @@ function NewsComponent({ maxCardsToShow }) {
 
             try {
                 let response = await fetch(url);
-             
+
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
-
 
                 let parsedData = await response.json();
                 setArticles(parsedData.articles);
@@ -37,6 +36,10 @@ function NewsComponent({ maxCardsToShow }) {
 
         fetchData();
     }, []);
+
+    const handleReadMore = (url) => {
+        window.open(url, "_self"); // Opens the URL in the same tab/window
+    };
 
     const displayedArticles = articles.slice(0, maxCardsToShow || 4);
 
@@ -57,7 +60,7 @@ function NewsComponent({ maxCardsToShow }) {
                             <div className="card-body">
                                 <h5 className='card-title'>{value.title}</h5>
                                 {/* <p className='card-text'>{value.description}</p> */}
-                                <a href={value.url} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Read More</a>
+                                <button className='btn btn-primary' onClick={() => handleReadMore(value.url)}>Read More</button>
                             </div>
                         </div>
                     </div>

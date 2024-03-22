@@ -22,12 +22,12 @@ function AdminLogin() {
     }, [])
 
     const loginHandle = async () => {
-        let result = await axios.post(" ", {
+        let result = await axios.post(" http://localhost:8000/user/login", {
             Email: AdminEmail,
             Password: AdminPassword
         })
         result = result.data
-        if (result.admintologin.name) {
+        if (result.Email) {
             localStorage.setItem("adminData", JSON.stringify(result))
             navigate("/")
         }
@@ -46,7 +46,7 @@ function AdminLogin() {
                         <Form.Control type="email" placeholder='Enter your email' value={AdminEmail} onChange={(e) => setAdminEmail(e.target.value)} />
                     </Form.Group>
                     <Form.Group as={Col} md="4" >
-                    <Form.Label htmlFor="">Password :</Form.Label>
+                        <Form.Label htmlFor="">Password :</Form.Label>
                         <Form.Control type="password" placeholder='Enter your password' value={AdminPassword} onChange={(e) => setAdminPassword(e.target.value)} />
                     </Form.Group>
 

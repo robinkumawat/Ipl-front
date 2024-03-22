@@ -1,9 +1,5 @@
-
-
-
-
 import React, { useEffect, useState } from 'react';
-import './news.css'
+import './news.css';
 
 function News() {
     const [articles, setArticles] = useState([]);
@@ -41,6 +37,10 @@ function News() {
         fetchData();
     }, []);
 
+    const handleReadMore = (url) => {
+        window.open(url, "_self"); // Opens the URL in the same tab/window
+    };
+
     return (
         <div className='news-detail'>
             <h2>Cricket news</h2>
@@ -54,7 +54,7 @@ function News() {
                             <div className="card-body">
                                 <h5 className='card-title'>{value.title}</h5>
                                 <p className='card-text'>{value.description}</p>
-                                <a href={value.url} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Read More</a>
+                                <button className='btn btn-primary' onClick={() => handleReadMore(value.url)}>Read More</button>
                             </div>
                         </div>
                     </div>
@@ -65,4 +65,3 @@ function News() {
 }
 
 export default News;
-
