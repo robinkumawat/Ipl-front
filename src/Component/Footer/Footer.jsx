@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import './footer.css'
+import { Link } from 'react-router-dom'
 
 
 
@@ -13,42 +14,42 @@ function Footer() {
                         <div className="footer-team">
                             <ul>
                                 <h2>Teams</h2>
-                                <a href="/Csk">
+                                <Link to="/Csk">
                                     <li>CSK</li>
-                                </a>
-                                <a href="/Mi">
+                                </Link>
+                                <Link to="/Mi">
                                     <li>MI</li>
-                                </a>
-                                <a href="/Kkr">
+                                </Link>
+                                <Link to="/Kkr">
                                     <li>KKR</li>
-                                </a>
-                                <a href="/Rr">
+                                </Link>
+                                <Link to="/Rr">
                                     <li>RR</li>
-                                </a>
-                                <a href="/Rcb">
+                                </Link>
+                                <Link to="/Rcb">
                                     <li>RCB</li>
-                                </a>
-                                <a href="/Lsg">
+                                </Link>
+                                <Link to="/Lsg">
                                     <li>LSG</li>
-                                </a>
-                                <a href="/Gt">
+                                </Link>
+                                <Link to="/Gt">
                                     <li>GT</li>
-                                </a>
-                                <a href="/Pk">
+                                </Link>
+                                <Link to="/Pk">
                                     <li>PK</li>
-                                </a>
-                                <a href="/Sh">
+                                </Link>
+                                <Link to="/Sh">
                                     <li>SH</li>
-                                </a>
-                                <a href="/Dc">
+                                </Link>
+                                <Link to="/Dc">
                                     <li>DC</li>
-                                </a>
+                                </Link>
                             </ul>
                             <div className="social-media">
                                 <h2>Contact Us</h2>
                                 <ul>
-                                    <a href="https://telegram.me/FreeTipBets"><li>Telegram</li></a>
-                                    <a href="https://youtube.com/@Suno_boss?si=sDq66EZP-CRds4OR"><li>Youtube</li></a>
+                                    <Link to="https://telegram.me/FreeTipBets"><li>Telegram</li></Link>
+                                    <Link to="https://youtube.com/@Suno_boss?si=sDq66EZP-CRds4OR"><li>Youtube</li></Link>
                                 </ul>
                             </div>
 
