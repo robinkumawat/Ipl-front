@@ -17,7 +17,7 @@ import Glenn from '../Shimage/Glenn.png'
 import Mayank from '../Shimage/Mayank.png'
 import Anmolpreet from '../Shimage/Anmolpreet.png'
 import Heinrich from '../Shimage/Heinrich.png'
-import Upendra from '../Shimage/Upendra.png'  
+import Upendra from '../Shimage/Upendra.png'
 import Nitish from '../Shimage/Nitish.png'
 import Abhishek from '../Shimage/Abhishek.png'
 import Marco from '../Shimage/Marco.png'
@@ -28,6 +28,7 @@ import Fazalhaq from '../Shimage/Fazalhaq.png'
 import T from '../Shimage/T.png'
 import Umran from '../Shimage/Umran.png'
 import Mark from '../Shimage/Mark.png'
+import {Link} from 'react-router-dom';
 
 
 const Shteam = () => {
@@ -35,60 +36,60 @@ const Shteam = () => {
         {
 
             image: 'src/Component/Image/MI-logo.png',
-            href: '/Mi'
+            link: '/Mi'
 
         },
         {
 
             image: 'src/Component/Image/CSK-logo.png',
-            href: '/Csk'
+            link: '/Csk'
         },
         {
 
             image: 'src/Component/Image/GT-logo.png',
-            href: 'Gt'
+            link: 'Gt'
 
         },
 
         {
 
             image: 'src/Component/Image/DC-logo.png',
-            href: 'Dc'
+            link: 'Dc'
 
         },
         {
 
             image: 'src/Component/Image/KKR-logo.png',
-            href: 'Kkr'
+            link: 'Kkr'
 
         },
         {
 
             image: 'src/Component/Image/LSG-logo.png',
-            href: 'Lsg'
+            link: 'Lsg'
 
         },
         {
 
             image: 'src/Component/Image/PK-logo.png',
-            href: 'Pk'
+            link: 'Pk'
 
         },
         {
 
             image: 'src/Component/Image/RCB-logo.png',
-            href: 'Rcb'
+            link: 'Rcb'
 
         },
         {
 
             image: 'src/Component/Image/RR-logo.png',
-            href: 'Rr'
+            link: 'Rr'
 
         },
         {
             image: 'src/Component/Image/SH-logo.png',
-            href: 'Sh'
+            link: 'Sh'
         },
 
 
@@ -104,7 +105,7 @@ const Shteam = () => {
     }
 
     const handleReadMore = (url) => {
-        window.open(url, "_self"); 
+        window.open(url, "_self");
     };
 
     return (
@@ -115,9 +116,10 @@ const Shteam = () => {
                         <Slider {...sliderSettings}>
                             {cards.map((card, index) => (
                                 <div key={index} className="carda">
-                                   <button onClick={() => handleReadMore(card.href)}>
+                                    <Link to={`/${card.link}`}>
                                         <img src={card.image} alt={`Card ${index}`} />
-                                    </button>
+                                    </Link>
+
                                 </div>
                             ))}
                         </Slider>

@@ -25,6 +25,7 @@ import Yuzvendra from '../Rrimage/Yuzvendra.png'
 import Adam from '../Rrimage/Adam.png'
 
 
+import {Link} from 'react-router-dom';
 
 
 
@@ -33,65 +34,65 @@ const Rrteam = () => {
         {
 
             image: 'src/Component/Image/MI-logo.png',
-            href: '/Mi'
+            link: '/Mi'
 
         },
         {
 
             image: 'src/Component/Image/CSK-logo.png',
-            href: '/Csk'
+            link: '/Csk'
         },
         {
 
             image: 'src/Component/Image/GT-logo.png',
-            href: 'Gt'
+            link: 'Gt'
 
         },
 
         {
 
             image: 'src/Component/Image/DC-logo.png',
-            href: 'Dc'
+            link: 'Dc'
 
         },
         {
 
             image: 'src/Component/Image/KKR-logo.png',
-            href: 'Kkr'
+            link: 'Kkr'
 
         },
         {
 
             image: 'src/Component/Image/LSG-logo.png',
-            href: 'Lsg'
+            link: 'Lsg'
 
         },
         {
 
             image: 'src/Component/Image/PK-logo.png',
-            href: 'Pk'
+            link: 'Pk'
 
         },
         {
 
             image: 'src/Component/Image/RCB-logo.png',
-            href: 'Rcb'
+            link: 'Rcb'
 
         },
         {
 
             image: 'src/Component/Image/RR-logo.png',
-            href: 'Rr'
+            link: 'Rr'
 
         },
         {
             image: 'src/Component/Image/SH-logo.png',
-            href: 'Sh'
+            link: 'Sh'
         },
 
 
     ];
-  
+
     const sliderSettings = {
         dots: true,
         infinite: true,
@@ -102,7 +103,7 @@ const Rrteam = () => {
     }
 
     const handleReadMore = (url) => {
-        window.open(url, "_self"); 
+        window.open(url, "_self");
     };
 
     return (
@@ -110,16 +111,17 @@ const Rrteam = () => {
             <div className="wapper">
                 <Container>
                     <div className="allteam">
-                    <Slider {...sliderSettings}>
-                        {cards.map((card, index) => (
-                            <div key={index} className="carda">
-                                <button onClick={() => handleReadMore(card.href)}>
+                        <Slider {...sliderSettings}>
+                            {cards.map((card, index) => (
+                                <div key={index} className="carda">
+                                    <Link to={`/${card.link}`}>
                                         <img src={card.image} alt={`Card ${index}`} />
-                                    </button>
-                            </div>
-                        ))}
-                    </Slider>
-                        </div>
+                                    </Link>
+
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
                 </Container>
                 <div className="team-rec">
                     <div className="logo">
@@ -150,7 +152,7 @@ const Rrteam = () => {
                                 <Card.Body>
                                     <Card.Title>SANJU SAMSON</Card.Title>
                                     <Card.Text>
-                                        Wk keeper-Batter , 
+                                        Wk keeper-Batter ,
                                         <span>(CAPTAIN)</span>
                                     </Card.Text>
 
@@ -172,7 +174,7 @@ const Rrteam = () => {
                                 <Card.Body>
                                     <Card.Title>SHIMRON HETMYER</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -182,7 +184,7 @@ const Rrteam = () => {
                                 <Card.Body>
                                     <Card.Title>YASHASVI JAISWAL</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -192,7 +194,7 @@ const Rrteam = () => {
                                 <Card.Body>
                                     <Card.Title>DHRUV JUREL</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -202,7 +204,7 @@ const Rrteam = () => {
                                 <Card.Body>
                                     <Card.Title>RIYAN PARAG</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -284,7 +286,7 @@ const Rrteam = () => {
 
                                 </Card.Body>
                             </Card>
-                           
+
                         </div>
                     </div>
                     <div className="cskteam">
@@ -315,7 +317,7 @@ const Rrteam = () => {
                                 <Card.Body>
                                     <Card.Title>NAVDEEP SAINI</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -325,7 +327,7 @@ const Rrteam = () => {
                                 <Card.Body>
                                     <Card.Title>PRASIDH KRISHNA</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -335,7 +337,7 @@ const Rrteam = () => {
                                 <Card.Body>
                                     <Card.Title>SANDEEP SHARMA</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -345,7 +347,7 @@ const Rrteam = () => {
                                 <Card.Body>
                                     <Card.Title>TRENT BOULT</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -360,7 +362,7 @@ const Rrteam = () => {
 
                                 </Card.Body>
                             </Card>
-                           
+
                             <Card style={{ width: '15rem' }}>
                                 <Card.Img variant="top" src={Adam} />
                                 <Card.Body>

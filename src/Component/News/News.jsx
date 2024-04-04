@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './news.css';
+import { Link } from 'react-router-dom';
+
 
 function News() {
     const [articles, setArticles] = useState([]);
@@ -54,7 +56,7 @@ function News() {
                             <div className="card-body">
                                 <h5 className='card-title'>{value.title}</h5>
                                 <p className='card-text'>{value.description}</p>
-                                <button className='btn btn-primary' onClick={() => handleReadMore(value.url)}>Read More</button>
+                                <Link to={value.url} className='btn btn-primary'>Read More</Link>
                             </div>
                         </div>
                     </div>

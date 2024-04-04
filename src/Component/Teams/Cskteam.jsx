@@ -28,6 +28,7 @@ import Prashant from '../Image/Prashant.png'
 import Simarjeet from '../Image/Simarjeet.png'
 import Tushar from '../Image/Tushar.png'
 import Matheesha from '../Image/Matheesha.png'
+import {Link} from 'react-router-dom';
 
 
 
@@ -37,60 +38,60 @@ const Cskteam = () => {
         {
 
             image: 'src/Component/Image/MI-logo.png',
-            href: 'Mi'
+            link: 'Mi'
 
         },
         {
 
             image: 'src/Component/Image/CSK-logo.png',
-            href: 'Csk'
+            link: 'Csk'
         },
         {
 
             image: 'src/Component/Image/GT-logo.png',
-            href: 'Gt'
+            link: 'Gt'
 
         },
 
         {
 
             image: 'src/Component/Image/DC-logo.png',
-            href: 'Dc'
+            link: 'Dc'
 
         },
         {
 
             image: 'src/Component/Image/KKR-logo.png',
-            href: 'Kkr'
+            link: 'Kkr'
 
         },
         {
 
             image: 'src/Component/Image/LSG-logo.png',
-            href: 'Lsg'
+            link: 'Lsg'
 
         },
         {
 
             image: 'src/Component/Image/PK-logo.png',
-            href: 'Pk'
+            link: 'Pk'
 
         },
         {
 
             image: 'src/Component/Image/RCB-logo.png',
-            href: 'Rcb'
+            link: 'Rcb'
 
         },
         {
 
             image: 'src/Component/Image/RR-logo.png',
-            href: 'Rr'
+            link: 'Rr'
 
         },
         {
             image: 'src/Component/Image/SH-logo.png',
-            href: 'Sh'
+            link: 'Sh'
         },
 
 
@@ -100,13 +101,13 @@ const Cskteam = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow:5,
+        slidesToShow: 5,
         slidesToScroll: 2,
 
     }
 
     const handleReadMore = (url) => {
-        window.open(url, "_self"); 
+        window.open(url, "_self");
     };
 
     return (
@@ -117,9 +118,10 @@ const Cskteam = () => {
                         <Slider {...sliderSettings}>
                             {cards.map((card, index) => (
                                 <div key={index} className="carda" >
-                                   <button onClick={() => handleReadMore(card.href)}>
+                                    <Link to={`/${card.link}`}>
                                         <img src={card.image} alt={`Card ${index}`} />
-                                    </button>
+                                    </Link>
+
                                 </div>
                             ))}
                         </Slider>
@@ -154,7 +156,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>M S DHONI</Card.Title>
                                     <Card.Text>
-                                        Wk keeper-Batter 
+                                        Wk keeper-Batter
                                         <span>(CAPTAIN)</span>
                                     </Card.Text>
 
@@ -175,7 +177,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>RUTUJAR GAIKWAD</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -185,7 +187,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>AJINKYA RAHANE</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -195,7 +197,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>SHAIK RASHEED</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -205,7 +207,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>SAMEER RIZVI</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -251,7 +253,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>MOEEN ALI</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -261,7 +263,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>SHIVAM DUBE </Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -271,7 +273,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>NISHANT SINDHU</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -282,7 +284,7 @@ const Cskteam = () => {
                                     <Card.Title>AJAY MANDAL
                                     </Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -348,7 +350,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>MAHEESH THEEKSHANA</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -358,7 +360,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>MUKASH CHOUDHARY</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -368,7 +370,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>MUSKTAFIZUR RAHMAN</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -378,7 +380,7 @@ const Cskteam = () => {
                                 <Card.Body>
                                     <Card.Title>PRASHANT SOLANKI</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>

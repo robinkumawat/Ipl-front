@@ -23,6 +23,7 @@ import Kumar from '../Miimage/Kumar.png'
 import Akash from '../Miimage/Akash.webp'
 import Jason from '../Miimage/Jason.png'
 
+import {Link} from 'react-router-dom';
 
 
 
@@ -32,64 +33,64 @@ const Miteam = () => {
         {
 
             image: 'src/Component/Image/MI-logo.png',
-            href: '/Mi'
+            link: '/Mi'
 
         },
         {
 
             image: 'src/Component/Image/CSK-logo.png',
-            href: '/Csk'
+            link: '/Csk'
         },
         {
 
             image: 'src/Component/Image/GT-logo.png',
-            href: 'Gt'
+            link: 'Gt'
 
         },
 
         {
 
             image: 'src/Component/Image/DC-logo.png',
-            href: 'Dc'
+            link: 'Dc'
 
         },
         {
 
             image: 'src/Component/Image/KKR-logo.png',
-            href: 'Kkr'
+            link: 'Kkr'
 
         },
         {
 
             image: 'src/Component/Image/LSG-logo.png',
-            href: 'Lsg'
+            link: 'Lsg'
 
         },
         {
 
             image: 'src/Component/Image/PK-logo.png',
-            href: 'Pk'
+            link: 'Pk'
 
         },
         {
 
             image: 'src/Component/Image/RCB-logo.png',
-            href: 'Rcb'
+            link: 'Rcb'
 
         },
         {
 
             image: 'src/Component/Image/RR-logo.png',
-            href: 'Rr'
+            link: 'Rr'
 
         },
         {
             image: 'src/Component/Image/SH-logo.png',
-            href: 'Sh'
+            link: 'Sh'
         },
 
     ];
-  
+
     const sliderSettings = {
         dots: true,
         infinite: true,
@@ -100,7 +101,7 @@ const Miteam = () => {
     }
 
     const handleReadMore = (url) => {
-        window.open(url, "_self"); 
+        window.open(url, "_self");
     };
 
     return (
@@ -108,16 +109,17 @@ const Miteam = () => {
             <div className="wapper">
                 <Container>
                     <div className="allteam">
-                    <Slider {...sliderSettings}>
-                        {cards.map((card, index) => (
-                            <div key={index} className="carda">
-                                 <button onClick={() => handleReadMore(card.href)}>
+                        <Slider {...sliderSettings}>
+                            {cards.map((card, index) => (
+                                <div key={index} className="carda">
+                                    <Link to={`/${card.link}`}>
                                         <img src={card.image} alt={`Card ${index}`} />
-                                    </button>
-                            </div>
-                        ))}
-                    </Slider>
-                        </div>
+                                    </Link>
+
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
                 </Container>
                 <div className="team-rec">
                     <div className="logo">
@@ -168,7 +170,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>DEWALD BREVIS</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -178,7 +180,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>SURYAKUMAR YADAV</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -188,7 +190,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>N . TILAK VARMA</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -198,7 +200,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>TIM DAVID</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -224,7 +226,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>HARDIK PANDYA</Card.Title>
                                     <Card.Text>
-                                        All-Rounder , 
+                                        All-Rounder ,
                                         <span>(CAPTAIN)</span>
                                     </Card.Text>
 
@@ -245,7 +247,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>ARJUN TENDULKAR</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -255,7 +257,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>ROMARIO SHEPHERD</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -265,7 +267,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>SHAMS MULANI</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -275,7 +277,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>NEHAL WADHERA</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -350,7 +352,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>KUMAR KARTIKEYA SINGH</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -360,7 +362,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>AKASH MADHWAL</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -370,7 +372,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>JASON BEHRENDORFF</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -380,7 +382,7 @@ const Miteam = () => {
                                 <Card.Body>
                                     <Card.Title>DILSHAN MADUSHANKA</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>

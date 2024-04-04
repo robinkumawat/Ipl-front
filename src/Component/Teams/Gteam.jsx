@@ -25,6 +25,7 @@ import Rashid from '../Gtimage/Rashid.png'
 import Joshua from '../Gtimage/Joshua.png'
 import Mohit from '../Gtimage/Mohit.png'
 import Mohammad from '../Gtimage/Mohammad.png'
+import {Link} from 'react-router-dom';
 
 
 
@@ -37,65 +38,65 @@ const Gteam = () => {
         {
 
             image: 'src/Component/Image/MI-logo.png',
-            href: 'Mi'
+            link: 'Mi'
 
         },
         {
 
             image: 'src/Component/Image/CSK-logo.png',
-            href: 'Csk'
+            link: 'Csk'
         },
         {
 
             image: 'src/Component/Image/GT-logo.png',
-            href: 'Gt'
+            link: 'Gt'
 
         },
 
         {
 
             image: 'src/Component/Image/DC-logo.png',
-            href: 'Dc'
+            link: 'Dc'
 
         },
         {
 
             image: 'src/Component/Image/KKR-logo.png',
-            href: 'Kkr'
+            link: 'Kkr'
 
         },
         {
 
             image: 'src/Component/Image/LSG-logo.png',
-            href: 'Lsg'
+            link: 'Lsg'
 
         },
         {
 
             image: 'src/Component/Image/PK-logo.png',
-            href: 'Pk'
+            link: 'Pk'
 
         },
         {
 
             image: 'src/Component/Image/RCB-logo.png',
-            href: 'Rcb'
+            link: 'Rcb'
 
         },
         {
 
             image: 'src/Component/Image/RR-logo.png',
-            href: 'Rr'
+            link: 'Rr'
 
         },
         {
             image: 'src/Component/Image/SH-logo.png',
-            href: 'Sh'
+            link: 'Sh'
         },
 
 
     ];
-  
+
     const sliderSettings = {
         dots: true,
         infinite: true,
@@ -106,7 +107,7 @@ const Gteam = () => {
     }
 
     const handleReadMore = (url) => {
-        window.open(url, "_self"); 
+        window.open(url, "_self");
     };
 
     return (
@@ -114,16 +115,17 @@ const Gteam = () => {
             <div className="wapper">
                 <Container>
                     <div className="allteam">
-                    <Slider {...sliderSettings}>
-                        {cards.map((card, index) => (
-                            <div key={index} className="carda">
-                                <button onClick={() => handleReadMore(card.href)}>
+                        <Slider {...sliderSettings}>
+                            {cards.map((card, index) => (
+                                <div key={index} className="carda">
+                                    <Link to={`/${card.link}`}>
                                         <img src={card.image} alt={`Card ${index}`} />
-                                    </button>
-                            </div>
-                        ))}
-                    </Slider>
-                        </div>
+                                    </Link>
+
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
                 </Container>
                 <div className="team-rec">
                     <div className="logo">
@@ -175,7 +177,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>DAVID MILLER</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -185,7 +187,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>MATTHEW WADE</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -195,7 +197,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>ROBIN MINZ</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -205,12 +207,12 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>KANE WILLIAMSON</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
                             </Card>
-                            
+
 
 
                         </div>
@@ -243,7 +245,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>DARSHAN NALKANDE</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -253,7 +255,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>VIJAY SHANKAR</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -263,7 +265,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>AZMATULLAH OMARZAI</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -273,7 +275,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>SHAHRUKH KHAN</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -308,7 +310,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>MOHAMMAD SHAMI</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -318,7 +320,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>KARTIK TYAGI</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -328,7 +330,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>SUSHANT MISHRA</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -338,7 +340,7 @@ const Gteam = () => {
                                 <Card.Body>
                                     <Card.Title>SPENCER JOHNSON</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>

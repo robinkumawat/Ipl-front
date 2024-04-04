@@ -15,10 +15,8 @@ import PK from '../Image/PK-logo.png'
 import RR from '../Image/RR-logo.png'
 import RCB from '../Image/RCB-logo.png'
 import SH from '../Image/SH-logo.png'
-
-
-
 import Tro from '../Image/Teams-trophy.svg'
+import { Link } from 'react-router-dom';
 
 
 function Teams() {
@@ -32,16 +30,16 @@ function Teams() {
             <div className="team">
               <Card style={{ width: '18rem' }}>
                 <div className="Csk">
-                  <a href="/Csk">
+                  <Link to="/Csk">
                     <img src={Csk} alt="" />
                     <h3>Chennai Super Kings</h3>
-                  </a>
+                  </Link>
                   <div className="trophy">
-                    <a href="/Csk">
+                    <Link to="/Csk">
                       <img src={Csk} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2010 | 2011 | 2018 | 2021 | 2023</div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -49,144 +47,144 @@ function Teams() {
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="Dc">
-                  <a href="/Dc">
+                  <Link to="/Dc">
                     <img src={DC} alt="" />
                     <h3>Delhi Capitals</h3>
-                  </a>
+                  </Link>
                   {/* <div className="trophy">
-                    <a href="">
+                    <link to="">
                       <img src={Csk} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2010 | 2011 | 2018 | 2021 | 2023</div>
-                    </a>
+                    </link>
                   </div> */}
                 </div>
 
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="GT">
-                  <a href="Gt">
+                  <Link to="Gt">
                     <img src={GT} alt="" />
                     <h3>Gujarat  Titans</h3>
-                  </a>
+                  </Link>
                   <div className="trophy">
-                    <a href="Gt">
+                    <Link to="Gt">
                       <img src={GT} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year"> 2022</div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="KKR">
-                  <a href="Kkr">
+                  <Link to="Kkr">
                     <img src={KKR} alt="" />
                     <h3>Kolkata knight Riders</h3>
-                  </a>
+                  </Link>
                   <div className="trophy">
-                    <a href="Kkr">
+                    <Link to="Kkr">
                       <img src={KKR} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2012 | 2014 </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="LSG">
-                  <a href="Lsg">
+                  <Link to="Lsg">
                     <img src={LSG} alt="" />
                     <h3>Lucknow Super Giants</h3>
-                  </a>
+                  </Link>
                   {/* <div className="trophy">
-                    <a href="">
+                    <link to="">
                       <img src={Csk} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2010 | 2011 | 2018 | 2021 | 2023</div>
-                    </a>
+                    </link>
                   </div> */}
                 </div>
 
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="MI">
-                  <a href="/Mi">
+                  <Link to="/Mi">
                     <img src={MI} alt="" />
                     <h3>Mumbia Indians</h3>
-                  </a>
+                  </Link>
                   <div className="trophy">
-                    <a href="Mi">
+                    <Link to="Mi">
                       <img src={MI} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2013 | 2015 | 2017 | 2019 | 2020</div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="PK">
-                  <a href="Pk">
-                    <img src={PK} alt="" />
+                  <Link to="Pk">
+        link           <img src={PK} alt="" />
                     <h3>Punjab Kings</h3>
-                  </a>
+                  </Link>
                   {/* <div className="trophy">
-                    <a href="">
+                    <link to="">
                       <img src={PK} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2010 | 2011 | 2018 | 2021 | 2023</div>
-                    </a>
+                    </link>
                   </div> */}
                 </div>
 
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="RR">
-                  <a href="Rr">
+                  <Link to="Rr">
                     <img src={RR} alt="" />
                     <h3>Rajasthan Royals</h3>
-                  </a>
+                  </Link>
                   <div className="trophy">
-                    <a href="Rr">
+                    <Link to="Rr">
                       <img src={RR} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2008 </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="RCB">
-                  <a href="Rcb">
+                  <Link to="Rcb">
                     <img src={RCB} alt="" />
                     <h3>Royal Challengers Bangalore</h3>
-                  </a>
+                  </Link>
                   {/* <div className="trophy">
-                    <a href="">
+                    <link to="">
                       <img src={Csk} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2010 | 2011 | 2018 | 2021 | 2023</div>
-                    </a>
+                    </link>
                   </div> */}
                 </div>
 
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="SH">
-                  <a href="Sh">
+                  <Link to="Sh">
                     <img src={SH} alt="" />
                     <h3>Sunrisers Haderabad</h3>
-                  </a>
+                  </Link>
                   <div className="trophy">
-                    <a href="Sh">
+                    <Link to="Sh">
                       <img src={SH} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2016</div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

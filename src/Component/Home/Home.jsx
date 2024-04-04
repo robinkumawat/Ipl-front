@@ -12,6 +12,7 @@ import NewsComponent from '../News/NewsComponent/NewsComponent';
 
 import Main from '../Image/mainlogo.jpeg'
 import Score from '../Home/Scores/Score';
+import { Link } from 'react-router-dom';
  
 
 function Home() {
@@ -155,7 +156,7 @@ function Home() {
             <div className="slider-sec">
                 <div className="latest">
                     <h3>Crickets  News</h3>
-                    <Button href='/News'>Show more</Button>
+                    <Link href='/News'>Show more</Link>
                 </div>
                 {/* {error && <p> {error} </p>} */}
                 <Container>

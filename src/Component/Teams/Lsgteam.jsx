@@ -19,16 +19,17 @@ import Krishnappa from '../Lsgimage/Krishnappa.png'
 import Krunal from '../Lsgimage/Krunal.png'
 import Kyle from '../Lsgimage/Kyle.png'
 import Marcus from '../Lsgimage/Marcus.png'
- import Prerak from '../Lsgimage/Prerak.png'
- import Yudhvir from '../Lsgimage/Yudhvir.png'
- import Mark from '../Lsgimage/Mark.png'
- import Mayank from '../Lsgimage/Mayank.png'
- import Mohsin from '../Lsgimage/Mohsin.png'
- import Ravi from '../Lsgimage/Ravi.png'
- import Yash from '../Lsgimage/Yash.png'
- import Amit from '../Lsgimage/Amit.png'
- import Naveen from '../Lsgimage/Naveen.png'
+import Prerak from '../Lsgimage/Prerak.png'
+import Yudhvir from '../Lsgimage/Yudhvir.png'
+import Mark from '../Lsgimage/Mark.png'
+import Mayank from '../Lsgimage/Mayank.png'
+import Mohsin from '../Lsgimage/Mohsin.png'
+import Ravi from '../Lsgimage/Ravi.png'
+import Yash from '../Lsgimage/Yash.png'
+import Amit from '../Lsgimage/Amit.png'
+import Naveen from '../Lsgimage/Naveen.png'
 
+import {Link} from 'react-router-dom';
 
 
 
@@ -39,60 +40,60 @@ const Lsgteam = () => {
         {
 
             image: 'src/Component/Image/MI-logo.png',
-            href: '/Mi'
+            link: '/Mi'
 
         },
         {
 
             image: 'src/Component/Image/CSK-logo.png',
-            href: '/Csk'
+            link: '/Csk'
         },
         {
 
             image: 'src/Component/Image/GT-logo.png',
-            href: 'Gt'
+            link: 'Gt'
 
         },
 
         {
 
             image: 'src/Component/Image/DC-logo.png',
-            href: 'Dc'
+            link: 'Dc'
 
         },
         {
 
             image: 'src/Component/Image/KKR-logo.png',
-            href: 'Kkr'
+            link: 'Kkr'
 
         },
         {
 
             image: 'src/Component/Image/LSG-logo.png',
-            href: 'Lsg'
+            link: 'Lsg'
 
         },
         {
 
             image: 'src/Component/Image/PK-logo.png',
-            href: 'Pk'
+            link: 'Pk'
 
         },
         {
 
             image: 'src/Component/Image/RCB-logo.png',
-            href: 'Rcb'
+            link: 'Rcb'
 
         },
         {
 
             image: 'src/Component/Image/RR-logo.png',
-            href: 'Rr'
+            link: 'Rr'
 
         },
         {
             image: 'src/Component/Image/SH-logo.png',
-            href: 'Sh'
+            link: 'Sh'
         },
 
     ];
@@ -107,7 +108,7 @@ const Lsgteam = () => {
     }
 
     const handleReadMore = (url) => {
-        window.open(url, "_self"); 
+        window.open(url, "_self");
 
     };
 
@@ -119,9 +120,10 @@ const Lsgteam = () => {
                         <Slider {...sliderSettings}>
                             {cards.map((card, index) => (
                                 <div key={index} className="carda">
-                                    <button onClick={() => handleReadMore(card.href)}>
+                                    <Link to={`/${card.link}`}>
                                         <img src={card.image} alt={`Card ${index}`} />
-                                    </button>
+                                    </Link>
+
                                 </div>
                             ))}
                         </Slider>
@@ -167,7 +169,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>QUINTON DE KOCK</Card.Title>
                                     <Card.Text>
-                                       Wk-keeper-Batter
+                                        Wk-keeper-Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -177,7 +179,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>DEVDUTT PADIKKAL</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -187,7 +189,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>NICHOLAS POORAN</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -197,12 +199,12 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>ASHTON TURNER</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
                             </Card>
-                            
+
 
                         </div>
                     </div>
@@ -234,7 +236,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>KRISHNAPPA GOWTHAM</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -244,7 +246,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>KRUNAL PANDYA</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -254,7 +256,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>KYLE MAYERS</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -264,7 +266,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>MARCUS STOINIS</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -318,7 +320,7 @@ const Lsgteam = () => {
                                     </Card.Text>
 
                                 </Card.Body>
-                            </Card>  
+                            </Card>
 
                         </div>
                     </div>
@@ -350,7 +352,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>MAYANK YADAV</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -360,7 +362,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>MOHSIN KHAN</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -370,7 +372,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>RAVI BISHNOI</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -380,7 +382,7 @@ const Lsgteam = () => {
                                 <Card.Body>
                                     <Card.Title>YASH THAKUR</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -415,7 +417,7 @@ const Lsgteam = () => {
 
                                 </Card.Body>
                             </Card>
-                            
+
 
                         </div>
                     </div>

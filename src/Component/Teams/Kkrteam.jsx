@@ -23,6 +23,7 @@ import Harshit from '../Kkrimage/Sunil.png'
 import Vaibhav from '../Kkrimage/Vaibhav.png'
 import Varun from '../Kkrimage/Varun.png'
 import Sunil from '../Kkrimage/Sunil.png'
+import {Link} from 'react-router-dom';
 
 
 
@@ -33,60 +34,60 @@ const Kkrteam = () => {
         {
 
             image: 'src/Component/Image/MI-logo.png',
-            href: '/Mi'
+            link: '/Mi'
 
         },
         {
 
             image: 'src/Component/Image/CSK-logo.png',
-            href: '/Csk'
+            link: '/Csk'
         },
         {
 
             image: 'src/Component/Image/GT-logo.png',
-            href: 'Gt'
+            link: 'Gt'
 
         },
 
         {
 
             image: 'src/Component/Image/DC-logo.png',
-            href: 'Dc'
+            link: 'Dc'
 
         },
         {
 
             image: 'src/Component/Image/KKR-logo.png',
-            href: 'Kkr'
+            link: 'Kkr'
 
         },
         {
 
             image: 'src/Component/Image/LSG-logo.png',
-            href: 'Lsg'
+            link: 'Lsg'
 
         },
         {
 
             image: 'src/Component/Image/PK-logo.png',
-            href: 'Pk'
+            link: 'Pk'
 
         },
         {
 
             image: 'src/Component/Image/RCB-logo.png',
-            href: 'Rcb'
+            link: 'Rcb'
 
         },
         {
 
             image: 'src/Component/Image/RR-logo.png',
-            href: 'Rr'
+            link: 'Rr'
 
         },
         {
             image: 'src/Component/Image/SH-logo.png',
-            href: 'Sh'
+            link: 'Sh'
         },
     ];
 
@@ -100,7 +101,7 @@ const Kkrteam = () => {
     }
 
     const handleReadMore = (url) => {
-        window.open(url, "_self"); 
+        window.open(url, "_self");
     };
 
     return (
@@ -111,9 +112,10 @@ const Kkrteam = () => {
                         <Slider {...sliderSettings}>
                             {cards.map((card, index) => (
                                 <div key={index} className="carda">
-                                     <button onClick={() => handleReadMore(card.href)}>
+                                    <Link to={`/${card.link}`}>
                                         <img src={card.image} alt={`Card ${index}`} />
-                                    </button>
+                                    </Link>
+
                                 </div>
                             ))}
                         </Slider>
@@ -169,7 +171,7 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>RINKU SINGH</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -179,7 +181,7 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>RAHMANULLAH GURBAZ</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -189,7 +191,7 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>SHERFANE RUTHERFORD</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -199,7 +201,7 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>K.L BHARAT</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -265,7 +267,7 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>ANDRA RUSSELL</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -275,12 +277,12 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>VENKATESH IYER</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
                             </Card>
-                        
+
 
                         </div>
                     </div>
@@ -312,7 +314,7 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>GUS ATKINSON</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -322,7 +324,7 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>SAKIB HUSSAIN</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -332,7 +334,7 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>HARSHIT RANA</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -341,7 +343,7 @@ const Kkrteam = () => {
                                 <Card.Body>
                                     <Card.Title>SUNIL NARINE</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>

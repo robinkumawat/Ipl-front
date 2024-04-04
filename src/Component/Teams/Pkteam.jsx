@@ -20,12 +20,13 @@ import Rishi from '../Pkimage/Rishi.png'
 import Sam from '../Pkimage/Sam.png'
 import Sikandar from '../Pkimage/Sikandar.png'
 import Shivam from '../Pkimage/Shivam.png'
-import Vidwath  from '../Pkimage/vidwath.png'
+import Vidwath from '../Pkimage/vidwath.png'
 import Rahul from '../Pkimage/Rahul.png'
 import Nathan from '../Pkimage/Nathan.png'
 import Kagiso from '../Pkimage/Kagiso.png'
-import Arshdeep from '../Pkimage/Arshdeep.png' 
+import Arshdeep from '../Pkimage/Arshdeep.png'
 import Brar from '../Pkimage/Brar.png'
+import {Link} from 'react-router-dom';
 
 
 
@@ -37,60 +38,60 @@ const Pkteam = () => {
         {
 
             image: 'src/Component/Image/MI-logo.png',
-            href: '/Mi'
+            link: '/Mi'
 
         },
         {
 
             image: 'src/Component/Image/CSK-logo.png',
-            href: '/Csk'
+            link: '/Csk'
         },
         {
 
             image: 'src/Component/Image/GT-logo.png',
-            href: 'Gt'
+            link: 'Gt'
 
         },
 
         {
 
             image: 'src/Component/Image/DC-logo.png',
-            href: 'Dc'
+            link: 'Dc'
 
         },
         {
 
             image: 'src/Component/Image/KKR-logo.png',
-            href: 'Kkr'
+            link: 'Kkr'
 
         },
         {
 
             image: 'src/Component/Image/LSG-logo.png',
-            href: 'Lsg'
+            link: 'Lsg'
 
         },
         {
 
             image: 'src/Component/Image/PK-logo.png',
-            href: 'Pk'
+            link: 'Pk'
 
         },
         {
 
             image: 'src/Component/Image/RCB-logo.png',
-            href: 'Rcb'
+            link: 'Rcb'
 
         },
         {
 
             image: 'src/Component/Image/RR-logo.png',
-            href: 'Rr'
+            link: 'Rr'
 
         },
         {
             image: 'src/Component/Image/SH-logo.png',
-            href: 'Sh'
+            link: 'Sh'
         },
 
     ];
@@ -105,7 +106,7 @@ const Pkteam = () => {
     }
 
     const handleReadMore = (url) => {
-        window.open(url, "_self"); 
+        window.open(url, "_self");
     };
 
     return (
@@ -116,9 +117,10 @@ const Pkteam = () => {
                         <Slider {...sliderSettings}>
                             {cards.map((card, index) => (
                                 <div key={index} className="carda">
-                                    <button onClick={() => handleReadMore(card.href)}>
+                                    <Link to={`/${card.link}`}>
                                         <img src={card.image} alt={`Card ${index}`} />
-                                    </button>
+                                    </Link>
+
                                 </div>
                             ))}
                         </Slider>
@@ -153,7 +155,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>SHIKAR DHAWAN</Card.Title>
                                     <Card.Text>
-                                        Batter , 
+                                        Batter ,
                                         <span>CAPTAIN</span>
                                     </Card.Text>
 
@@ -174,7 +176,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>JONNY BAIRSTOW</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -184,7 +186,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>PRABHSIMRAN SINGH</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -194,7 +196,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>LIAM LIVINGSTONE</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -204,7 +206,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>HARPREET BHATIA</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -260,7 +262,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>ASHUTOSH SHARMA</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -270,7 +272,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>TANAY THYAGARAJANN</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -280,7 +282,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>ATHARVA TAIDE </Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -290,7 +292,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>RISHI DHAWAN</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -356,7 +358,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>ARSHDEEP SINGH</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -366,7 +368,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>KAGISO RABADA</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -376,7 +378,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>NATHAN ELLIS</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -386,7 +388,7 @@ const Pkteam = () => {
                                 <Card.Body>
                                     <Card.Title>RAHUL CHAHAR</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -411,7 +413,7 @@ const Pkteam = () => {
 
                                 </Card.Body>
                             </Card>
-                           
+
 
                         </div>
                     </div>

@@ -24,6 +24,7 @@ import Mohammed from '../Rcbimage/Mohammed.png'
 import Reece from '../Rcbimage/Reece.png'
 import Himanshu from '../Rcbimage/Himanshu.png'
 import Rajan from '../Rcbimage/Rajan.png'
+import {Link} from 'react-router-dom';
 
 
 
@@ -33,60 +34,60 @@ const Rcbteam = () => {
         {
 
             image: 'src/Component/Image/MI-logo.png',
-            href: '/Mi'
+            link: '/Mi'
 
         },
         {
 
             image: 'src/Component/Image/CSK-logo.png',
-            href: '/Csk'
+            link: '/Csk'
         },
         {
 
             image: 'src/Component/Image/GT-logo.png',
-            href: 'Gt'
+            link: 'Gt'
 
         },
 
         {
 
             image: 'src/Component/Image/DC-logo.png',
-            href: 'Dc'
+            link: 'Dc'
 
         },
         {
 
             image: 'src/Component/Image/KKR-logo.png',
-            href: 'Kkr'
+            link: 'Kkr'
 
         },
         {
 
             image: 'src/Component/Image/LSG-logo.png',
-            href: 'Lsg'
+            link: 'Lsg'
 
         },
         {
 
             image: 'src/Component/Image/PK-logo.png',
-            href: 'Pk'
+            link: 'Pk'
 
         },
         {
 
             image: 'src/Component/Image/RCB-logo.png',
-            href: 'Rcb'
+            link: 'Rcb'
 
         },
         {
 
             image: 'src/Component/Image/RR-logo.png',
-            href: 'Rr'
+            link: 'Rr'
 
         },
         {
             image: 'src/Component/Image/SH-logo.png',
-            href: 'Sh'
+            link: 'Sh'
         },
 
     ];
@@ -101,7 +102,7 @@ const Rcbteam = () => {
     }
 
     const handleReadMore = (url) => {
-        window.open(url, "_self"); 
+        window.open(url, "_self");
     };
 
     return (
@@ -112,9 +113,10 @@ const Rcbteam = () => {
                         <Slider {...sliderSettings}>
                             {cards.map((card, index) => (
                                 <div key={index} className="carda">
-                                     <button onClick={() => handleReadMore(card.href)}>
+                                    <Link to={`/${card.link}`}>
                                         <img src={card.image} alt={`Card ${index}`} />
-                                    </button>
+                                    </Link>
+
                                 </div>
                             ))}
                         </Slider>
@@ -149,7 +151,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>FAF DU PLESSIS</Card.Title>
                                     <Card.Text>
-                                        Batter , 
+                                        Batter ,
                                         <span>CAPTAIN</span>
                                     </Card.Text>
 
@@ -170,7 +172,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>RAJAT PATIDAR</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -180,7 +182,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>VIRAT KOHLI</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -190,7 +192,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>ANUJ RAWAT</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -200,7 +202,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>SUYASH S PRABHUDESSAI</Card.Title>
                                     <Card.Text>
-                                       Batter
+                                        Batter
                                     </Card.Text>
 
                                 </Card.Body>
@@ -256,7 +258,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>MAHIPAL LOMROR</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -266,7 +268,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>KARN SHARMA</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -276,7 +278,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>CHAMERON GREEN</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -286,7 +288,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>SWAPNIL SINGH</Card.Title>
                                     <Card.Text>
-                                       All-rounder
+                                        All-rounder
                                     </Card.Text>
 
                                 </Card.Body>
@@ -301,7 +303,7 @@ const Rcbteam = () => {
 
                                 </Card.Body>
                             </Card>
-                           
+
 
                         </div>
                     </div>
@@ -333,7 +335,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>LOCKIE FERGUSON</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -343,7 +345,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>MOHAMMED SIRAJ</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -353,7 +355,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>VYSHAK VIJAY KUMAR</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -363,7 +365,7 @@ const Rcbteam = () => {
                                 <Card.Body>
                                     <Card.Title>YASH DAYAL</Card.Title>
                                     <Card.Text>
-                                       Bowler
+                                        Bowler
                                     </Card.Text>
 
                                 </Card.Body>
@@ -408,7 +410,7 @@ const Rcbteam = () => {
 
                                 </Card.Body>
                             </Card>
-                           
+
 
                         </div>
                     </div>
