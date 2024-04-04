@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './score.css'
 
-const Video = () => {
+const Score = () => {
   const [matches, setMatches] = useState([]);
   const [filteredMatches, setFilteredMatches] = useState([]);
   const [filter, setFilter] = useState('live'); 
@@ -78,7 +78,7 @@ const Video = () => {
   );
 };
 
-export default Video;
+export default Score;
 
 
 

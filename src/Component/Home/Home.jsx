@@ -1,20 +1,17 @@
 import Carousel from 'react-bootstrap/Carousel';
 import First from '../Image/First-slider.jpeg'
 import Second from '../Image/Sec-slider.jpeg'
-// import Third from '../Image/Third-slider.jpg'
 import Forth from '../Image/Forth-slider.jpg'
 import Container from 'react-bootstrap/Container';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import React, { useEffect, useState } from 'react';
 import './home.css'
-// import NewsComp from '../News/News';
 import NewsComponent from '../News/NewsComponent/NewsComponent';
-// import Video from './Videos/Video';
-// import Score from '../Home/Scores/Score'
-import Video from '../Home/Scores/Score';
+
 import Main from '../Image/mainlogo.jpeg'
+import Score from '../Home/Scores/Score';
  
 
 function Home() {
@@ -88,7 +85,7 @@ function Home() {
                 
                 <Container>
             
-                    <Video/>
+                    <Score/>
             
                 </Container>
             </div>
