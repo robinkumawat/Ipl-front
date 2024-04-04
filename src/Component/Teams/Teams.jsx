@@ -63,12 +63,12 @@ function Teams() {
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="GT">
-                  <Link to="Gt">
+                  <Link to="/Gt">
                     <img src={GT} alt="" />
                     <h3>Gujarat  Titans</h3>
                   </Link>
                   <div className="trophy">
-                    <Link to="Gt">
+                    <Link to="/Gt">
                       <img src={GT} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year"> 2022</div>
@@ -79,7 +79,7 @@ function Teams() {
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="KKR">
-                  <Link to="Kkr">
+                  <Link to="/Kkr">
                     <img src={KKR} alt="" />
                     <h3>Kolkata knight Riders</h3>
                   </Link>
@@ -95,7 +95,7 @@ function Teams() {
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="LSG">
-                  <Link to="Lsg">
+                  <Link to="/Lsg">
                     <img src={LSG} alt="" />
                     <h3>Lucknow Super Giants</h3>
                   </Link>
@@ -116,7 +116,7 @@ function Teams() {
                     <h3>Mumbia Indians</h3>
                   </Link>
                   <div className="trophy">
-                    <Link to="Mi">
+                    <Link to="/Mi">
                       <img src={MI} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2013 | 2015 | 2017 | 2019 | 2020</div>
@@ -127,7 +127,7 @@ function Teams() {
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="PK">
-                  <Link to="Pk">
+                  <Link to="/Pk">
         link           <img src={PK} alt="" />
                     <h3>Punjab Kings</h3>
                   </Link>
@@ -143,12 +143,12 @@ function Teams() {
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="RR">
-                  <Link to="Rr">
+                  <Link to="/Rr">
                     <img src={RR} alt="" />
                     <h3>Rajasthan Royals</h3>
                   </Link>
                   <div className="trophy">
-                    <Link to="Rr">
+                    <Link to="/Rr">
                       <img src={RR} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2008 </div>
@@ -159,7 +159,7 @@ function Teams() {
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="RCB">
-                  <Link to="Rcb">
+                  <Link to="/Rcb">
                     <img src={RCB} alt="" />
                     <h3>Royal Challengers Bangalore</h3>
                   </Link>
@@ -175,12 +175,12 @@ function Teams() {
               </Card>
               <Card style={{ width: '18rem' }}>
               <div className="SH">
-                  <Link to="Sh">
+                  <Link to="/Sh">
                     <img src={SH} alt="" />
                     <h3>Sunrisers Haderabad</h3>
                   </Link>
                   <div className="trophy">
-                    <Link to="Sh">
+                    <Link to="/Sh">
                       <img src={SH} alt="" />
                       <img src={Tro} alt="" />
                       <div className="year">2016</div>

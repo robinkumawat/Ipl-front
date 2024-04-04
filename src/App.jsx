@@ -48,7 +48,7 @@ function App() {
           <Route path='/pk' element={<Pkteam/>} />
           <Route path='/Rr' element={<Rrteam/>} />
           <Route path='/Rcb' element={<Rcbteam/>} />
-          <Route path='/sh' element={<Shteam/>} />
+          <Route path='/Sh' element={<Shteam/>} />
           <Route path='/search' element={<Search/>} />
           <Route path='/News' element={<News/>} />
           {/* <Route path='/video' element={<Videos/>} /> */}
