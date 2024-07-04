@@ -22,6 +22,7 @@ import Rcbteam from './Component/Teams/Rcbteam'
 import Shteam from './Component/Teams/Shteam'
 import Search from './Component/Home/Search/Search'
 import News from './Component/News/News'
+import NewsComponent from './Component/News/NewsComponent/NewsComponent'
 // import Videos from './Component/Home/Videos/Video'
 
 
@@ -50,7 +51,7 @@ function App() {
           <Route path='/Rcb' element={<Rcbteam/>} />
           <Route path='/Sh' element={<Shteam/>} />
           <Route path='/search' element={<Search/>} />
-          <Route path='/News' element={<News/>} />
+          <Route path='/News' element={<NewsComponent/>} />
           {/* <Route path='/video' element={<Videos/>} /> */}
 
 

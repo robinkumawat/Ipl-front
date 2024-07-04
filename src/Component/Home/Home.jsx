@@ -156,7 +156,7 @@ function Home() {
             <div className="slider-sec">
                 <div className="latest">
                     <h3>Crickets  News</h3>
-                    <Link href='/News'>Show more</Link>
+                    <Link to='/News'>Show more</Link>
                 </div>
                 {/* {error && <p> {error} </p>} */}
                 <Container>
